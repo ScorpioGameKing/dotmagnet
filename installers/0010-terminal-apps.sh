@@ -3,7 +3,7 @@
 # Bring in our installer functions
 function_dir=./../functions
 parent_dir="$(builtin cd "$function_dir"; pwd)"
-source "$parent_dir/installer_functions.sh"
+source "$parent_dir/functions/installer_functions.sh"
 
 # Tell the user what step this is
 clear
@@ -14,11 +14,20 @@ echo "Installing yeet: Flexible Package Management"
 yay -S yeet
 complete_msg "yeet"
 
+# Install tmux for terminal management
+echo "Installing tmux: Terminal Multiplexer"
+install_app "tmux"
+
+# Install tmux plugin manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+complete_msg "tmux plugins"
+
 # Install NeoViM for better text editing
 echo "NeoVim: The Best Editor Ever"
 install_app "neovim"
 
 # Install Neovim Plugins
+echo "Installing NeoVim Plugins"
 git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 complete_msg "NeoVim Plugins"
