@@ -1,15 +1,9 @@
 #! /bin/sh
 
-# Useful Functions
-function complete_msg () {
-    clear
-    echo "$1 Setup Complete"
-}
-
-function install_app () {
-    yeet -S $1
-    complete_msg $1
-}
+# Bring in our installer functions
+function_dir=./../functions
+parent_dir="$(builtin cd "$function_dir"; pwd)"
+source "$parent_dir/installer_functions.sh"
 
 # Tell the user what step this is
 clear
