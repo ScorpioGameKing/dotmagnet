@@ -61,6 +61,18 @@ install_app "mpd"
 echo "Installing rmpc: It tells you what that noise is"
 install_app "rmpc"
 
+# Install github cli so we can auth
+echo "Installing github cli: Use github from the cli"
+install_app "github-cli"
+
+# Install lazygit for nice git manager 
+echo "Installing lazygit: Git Management Helper"
+install_app "lazygit"
+
+# Install udiske for auto usb mounting
+echo "Installing udiskie: Auto usb mounting"
+install_app "udiskie"
+
 # We're done with installing terminal apps
 complete_msg "Terminal Application"
 
