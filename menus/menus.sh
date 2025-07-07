@@ -3,7 +3,7 @@
 # This is used to bring our multiple menus into 1 easy file to import
 
 # Set up our sourcing dir
-menu_dir=./menu
+menu_dir=.
 parent_dir="$(builtin cd "$menu_dir"; pwd)"
 
 # Bring in our menus
