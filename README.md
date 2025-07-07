@@ -6,35 +6,35 @@ the amount of required code letting you focus more on deciding what to install.
 
 # Features
 
-[ ] Dotmagnet Top Menu
-[-] Installer
-    [x] Base Installer Script
-    [-] Installation Flags
-        [x] Auto Confirm
-        [ ] Pass Package Manager
-        [ ] Install Script Directory
-[-] Menus
-    [x] Hardcoded Splashes
-    [ ] Dotmagnet Option Menus
-    [ ] "Build Your Own" Menus
-[-] Installation Helpers
-[ ] Uninstaller
-    [ ] Base Uninstaller Script
-    [ ] Uninstallation Flags
-        [ ] Auto Confirm
-        [ ] Pass Package Manager
-        [ ] Uninstall Script Directory
-[ ] Rebuilder
-    [ ] Base Rebuilder Script
-    [ ] Rebuilder Flags
-        [ ] Auto Confirm
-        [ ] Pass Package Manager
-        [ ] Pass Install Script Directory
-        [ ] Pass Uninstall Script Directory
-[ ] Themes
-    [ ] Colors
-    [ ] Borders
-    [ ] Default Messages
+- [ ] Dotmagnet Top Menu
+- [ ] Installer
+    - [x] Base Installer Script
+    - [ ] Installation Flags
+        - [x] Auto Confirm
+        - [ ] Pass Package Manager
+        - [ ] Install Script Directory
+- [ ] Menus
+    - [x] Hardcoded Splashes
+    - [ ] Dotmagnet Option Menus
+    - [ ] "Build Your Own" Menus
+- [ ] Installation Helpers
+- [ ] Uninstaller
+    - [ ] Base Uninstaller Script
+    - [ ] Uninstallation Flags
+        - [ ] Auto Confirm
+        - [ ] Pass Package Manager
+        - [ ] Uninstall Script Directory
+- [ ] Rebuilder
+    - [ ] Base Rebuilder Script
+    - [ ] Rebuilder Flags
+        - [ ] Auto Confirm
+        - [ ] Pass Package Manager
+        - [ ] Pass Install Script Directory
+        - [ ] Pass Uninstall Script Directory
+- [ ] Themes
+    - [ ] Colors
+    - [ ] Borders
+    - [ ] Default Messages
 
 # How to use
 
