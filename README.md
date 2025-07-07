@@ -2,11 +2,15 @@
 
 Dot🧲Magnet is a "BYOIS" or "Bring Your Own Install Script" manager. Using Dot🧲Magnet you can easily stage your install
 scripts into multiple, easily manageable steps. Provided along with the runner are useful helper funtions to reduce
-the amount of required code letting you focus more on deciding what to install. 
+the amount of required code letting you focus more on deciding what to install. Want a fancy logo for your installer?
+Go right ahead! Want to change up the messages to the user or maybe the colors? Rice it up! While the options might not
+be wide, the secondary aim of Dot🧲Magnet is to provide as much customizeable features as possible.
 
 # Features
 
 - [ ] Dot🧲Magnet Top Menu
+    - [ ] Logo
+    - [ ] Options
 - [ ] Installer
     - [x] Base Installer Script
     - [ ] Installation Flags
@@ -14,8 +18,14 @@ the amount of required code letting you focus more on deciding what to install.
         - [ ] Pass Package Manager
         - [ ] Install Script Directory
 - [ ] Menus
-    - [x] Hardcoded Splashes
     - [ ] Dot🧲Magnet Option Menus
+        - [x] Installer Splash
+        - [x] Help Splash
+        - [x] Active File Notification
+        - [ ] Installing App Notification
+        - [ ] App Success Notification
+        - [ ] File Success Notification
+        - [ ] Installer Success Splash
     - [ ] "Build Your Own" Menus
 - [ ] Installation Helpers
 - [ ] Uninstaller
@@ -60,4 +70,14 @@ parent_dir="$(builtin cd "$function_dir"; pwd)"
 source "$parent_dir/functions/installer_functions.sh"
 ```
 
-Please see the files in `functions/` for further information on what functions are provided and how to use them.
+As for accessing menus, add the following:
+
+```sh
+# Bring in our menus
+menu_dir=./../menus
+parent_dir="$(builtin cd "$menu_dir"; pwd)"
+source "$parent_dir/menus/menus.sh"
+```
+
+Please see the files in `functions/` and `menus/` for further information on what functions iand menus are provided and 
+how to use them.
