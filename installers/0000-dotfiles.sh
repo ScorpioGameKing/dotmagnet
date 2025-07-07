@@ -5,7 +5,7 @@ echo "Downloading and installing Dotfiles"
 git clone https://github.com/ScorpioGameKing/Scorpio-Gruv-dotfiles ~/dotfiles
 
 # We're grabbing stow and saving the current dir so we can hop to the dotfiles, install and return
-sudo pacman -S stow
+sudo pacman -S --noconfirm stow
 cur_dir= pwd
 cd ~/dotfiles
 stow .
