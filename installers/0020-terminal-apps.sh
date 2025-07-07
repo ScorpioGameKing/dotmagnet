@@ -35,11 +35,8 @@ install_app "zoxide" "auto"
 install_app "fzf" "auto"
 install_app "starship" "auto"
 install_app "fastfetch" "auto"
-install_app "mpd" "auto"
-install_app "rmpc" "auto"
 install_app "github-cli" "auto"
 install_app "lazygit" "auto"
-install_app "udiskie" "auto"
 
 # We're done with installing terminal apps
 show_install_end_splash "Terminal Application"

@@ -19,6 +19,7 @@ install_app "hyprcursor" "auto"
 install_app "rose-pine-hyprcursor" "auto"
 install_app "rofi" "auto"
 install_app "swaync" "auto"
+install_app "udiskie" "auto"
 
 # Install our wallpaper engine and provider
 install_app "python-imageio" "auto"

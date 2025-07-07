@@ -18,16 +18,16 @@ be wide, the secondary aim of Dot🧲Magnet is to provide as much customizeable 
         - [ ] Pass Package Manager
         - [ ] Install Script Directory
 - [ ] Menus
-    - [ ] Dot🧲Magnet Option Menus
+    - [x] Dot🧲Magnet Option Menus
         - [x] Installer Splash
         - [x] Help Splash
         - [x] Active File Notification
-        - [ ] Installing App Notification
-        - [ ] App Success Notification
-        - [ ] File Success Notification
-        - [ ] Installer Success Splash
+        - [x] Installing App Notification
+        - [x] App Success Notification
+        - [x] File Success Notification
+        - [x] Installer Success Splash
     - [ ] "Build Your Own" Menus
-- [ ] Installation Helpers
+- [x] Installation Helpers
 - [ ] Uninstaller
     - [ ] Base Uninstaller Script
     - [ ] Uninstallation Flags
@@ -70,7 +70,7 @@ parent_dir="$(builtin cd "$function_dir"; pwd)"
 source "$parent_dir/functions/installer_functions.sh"
 ```
 
-As for accessing menus, add the following:
+As for accessing menus, import them by adding the following if you haven't already imported `installer_functions`:
 
 ```sh
 # Bring in our menus
@@ -79,5 +79,5 @@ parent_dir="$(builtin cd "$menu_dir"; pwd)"
 source "$parent_dir/menus/menus.sh"
 ```
 
-Please see the files in `functions/` and `menus/` for further information on what functions iand menus are provided and 
+Please see the files in `functions/` and `menus/` for further information on what functions and menus are provided and 
 how to use them.
