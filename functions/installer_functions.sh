@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Import our Menus
-menu_dir=./menu
+menu_dir=./../menu
 parent_dir="$(builtin cd "$menu_dir"; pwd)"
 source "$parent_dir/menus/menus.sh"
 
