@@ -1,5 +1,8 @@
 #! /bin/sh
 
+# Ensure git is installed
+sudo pacman -S --noconfirm git
+
 # Starting Message. After which we clone the dotfile repo to the user's home
 echo "Downloading and installing Dotfiles"
 git clone https://github.com/ScorpioGameKing/Scorpio-Gruv-dotfiles ~/dotfiles
