@@ -1,12 +1,12 @@
-# What is dotmagnet?
+# What is Dot🧲Magnet?
 
-Dotmagnet is a "BYOIS" or "Bring Your Own Install Script" manager. Using Dotmagnet you can easily stage your install
+Dot🧲Magnet is a "BYOIS" or "Bring Your Own Install Script" manager. Using Dot🧲Magnet you can easily stage your install
 scripts into multiple, easily manageable steps. Provided along with the runner are useful helper funtions to reduce
 the amount of required code letting you focus more on deciding what to install. 
 
 # Features
 
-- [ ] Dotmagnet Top Menu
+- [ ] Dot🧲Magnet Top Menu
 - [ ] Installer
     - [x] Base Installer Script
     - [ ] Installation Flags
@@ -15,7 +15,7 @@ the amount of required code letting you focus more on deciding what to install.
         - [ ] Install Script Directory
 - [ ] Menus
     - [x] Hardcoded Splashes
-    - [ ] Dotmagnet Option Menus
+    - [ ] Dot🧲Magnet Option Menus
     - [ ] "Build Your Own" Menus
 - [ ] Installation Helpers
 - [ ] Uninstaller
@@ -38,7 +38,7 @@ the amount of required code letting you focus more on deciding what to install.
 
 # How to use
 
-Dotmagnet is incredibly simple to use, be careful about running this right away as it will attempt to install the provided
+Dot🧲Magnet is incredibly simple to use, be careful about running this right away as it will attempt to install the provided
 example installation files:
 
 ```sh
@@ -51,7 +51,7 @@ cd dotmagnet
 
 Any bash file placed in the `installers/` directory by default will be run by the installer. It's highly recomended to
 enforce some form of ordering so that your files will install in the correct order. To use the helper functions provided
-bt Dotmagnet add the following snippet near the top of your file:
+by Dot🧲Magnet add the following snippet near the top of your file:
 
 ```sh
 # Bring in our installer functions
