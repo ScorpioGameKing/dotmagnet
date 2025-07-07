@@ -36,3 +36,6 @@ echo "PS1='[\u@\h \W]\\$ '" >> ~/.bashrc
 echo "" >> ~/.bashrc
 echo "eval \"\$(starship init bash)\"" >> ~/.bashrc
 echo "eval \"\$(zoxide init --cmd cd bash)\"" >> ~/.bashrc
+
+# Tell the user we're done
+echo ".bashrc file has been set up"

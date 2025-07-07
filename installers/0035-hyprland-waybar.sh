@@ -9,6 +9,7 @@ source "$parent_dir/functions/installer_functions.sh"
 echo "Building waybar with cava support"
 
 # Grab waybar dependencies
+echo "PHASE 1: Installing Requirements"
 install_app "meson" "auto"
 install_app "ninja" "auto"
 install_app "gtkmm3" "auto"
@@ -28,7 +29,8 @@ install_app "cava" "auto"
 install_app "gdbus_codegen" "auto"
 install_app "glib2-devel" "auto"
 
-#functions Build and install waybar with cava support
+# Build and install waybar with cava support
+echo "PHASE 2: Building + Installing Waybar"
 git clone https://github.com/Alexays/Waybar
 cd Waybar
 meson setup build
@@ -36,3 +38,5 @@ ninja -C build install
 cd ..
 rm -rf Waybar
 
+# Tell the user we're done
+echo "Waybar Installation Complete"
