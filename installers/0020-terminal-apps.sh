@@ -6,28 +6,27 @@ parent_dir="$(builtin cd "$function_dir"; pwd)"
 source "$parent_dir/functions/installer_functions.sh"
 
 # Tell the user what step this is
-clear
-echo "Installing and setting up Terminal applications"
+show_install_start_splash "Installing and setting up Terminal applications"
 
 # Installing the 2 big ones and their plugins first
-echo "Installing yeet"
+show_app_install "yeet"
 yay -S --noconfirm yeet
-complete_msg "yeet"
+show_app_complete "yeet"
 
 install_app "tmux" "auto"
 
 # Install tmux plugin manager
-echo "Installing tmux plugins"
+show_app_install "tmux"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-complete_msg "tmux plugins"
+show_app_complete "tmux plugins"
 
 install_app "neovim" "auto"
 
 # Install Neovim Plugins
-echo "Installing NeoVim Plugins"
+show_app_install "NeoVim Plugins"
 git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
-complete_msg "NeoVim Plugins"
+show_app_complete "NeoVim Plugins"
 
 # Install the rest
 install_app "yazi" "auto"
@@ -43,5 +42,5 @@ install_app "lazygit" "auto"
 install_app "udiskie" "auto"
 
 # We're done with installing terminal apps
-complete_msg "Terminal Application"
+show_install_end_splash "Terminal Application"
 

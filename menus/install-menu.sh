@@ -11,4 +11,18 @@ function show_install_menu () {
     echo "a working example."
     echo "|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|"
     echo ""
+
+    # Wait a few seconds so we can read
+    sleep 3
+
+    # Begin Installation
+    clear
+    echo ""
+    echo "|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|"
+    echo "Begining to run installers"
+    echo "|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|"
+    echo ""
+
+    # Shorter Wait
+    sleep 2
 }

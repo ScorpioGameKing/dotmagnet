@@ -1,15 +1,11 @@
 #! /bin/sh
 
-# Display the current installer ($1)  we're running
-function show_next_installer () {
+# Tell the user what we're going to install ($1)
+function show_app_install () {
     clear
     echo ""
     echo "|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|"
-    echo "Running: $file"
+    echo "Attempting to Install $1"
     echo "|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|<>|"
     echo ""
-    
-    # Wait a few seconds
-    sleep 5
-
 }

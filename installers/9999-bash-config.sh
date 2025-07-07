@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Tell user what we're doing
-echo "Modifying the .bashrc file"
+show_install_start_splash "Modifying the .bashrc file"
 
 # This is going to be dirty for now, we'll be smart later if we bother
 
@@ -38,4 +38,4 @@ echo "eval \"\$(starship init bash)\"" >> ~/.bashrc
 echo "eval \"\$(zoxide init --cmd cd bash)\"" >> ~/.bashrc
 
 # Tell the user we're done
-echo ".bashrc file has been set up"
+show_install_end_splash ".bashrc file has been set up"

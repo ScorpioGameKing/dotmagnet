@@ -1,5 +1,6 @@
 #! /bin/sh
 
+# Show our helper functions
 function show_help_menu () {
     clear
     echo ""

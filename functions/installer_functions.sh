@@ -1,21 +1,25 @@
 #! /bin/sh
 
-# Show a completion message using the first argument
+# Import our Menus
+menu_dir=./menu
+parent_dir="$(builtin cd "$menu_dir"; pwd)"
+source "$parent_dir/menus/menus.sh"
+
+# Tell the user that MANUAL SETUP of the application ($1) is complete
 function complete_msg () {
-    clear
-    echo "$1 Setup Complete"
+    show_app_completion $1
 }
 
-# Install the first argument. The second argument toggles noconfirm
+# Install the given application ($1). $2 is a "noconfirm" option
 function install_app () {
     if [ "$2" = "auto" ]; then
-        echo "Trying to install: $1"
+        show_app_install $1
         yes '' | yeet -S $1
-        complete_msg $1
+        show_app_completion $1
     else
-        echo "Trying to install: $1"
+        show_app_install $1
         yeet -S $1
-        complete_msg $1
+        show_app_completion $1
     fi
 }
 

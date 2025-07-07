@@ -13,20 +13,17 @@ fi
 # Install Menu
 if [ "$1" = "install" ]; then
     show_install_menu
-
-    # Wait a few seconds
-    sleep 5
     
-    # Begin Installation
-    echo ""
-    echo "Begining to run installers"
-
     # Iterate through the installers
     for file in ./installers/*; do
         if [ -f "$file" ]; then
             show_next_installer $file 
+
             # Run the installer
             sh "$file"
         fi
     done
+    
+    # And show our exit Message
+    show_install_complete
 fi

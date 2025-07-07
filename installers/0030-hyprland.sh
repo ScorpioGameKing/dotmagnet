@@ -6,7 +6,7 @@ parent_dir="$(builtin cd "$function_dir"; pwd)"
 source "$parent_dir/functions/installer_functions.sh"
 
 # Tell the user what we're doing
-echo "Installing hyprland apps"
+show_install_end_splash "Installing hyprland apps"
 
 # Grab hyprland first
 install_app "hyprland" "auto"
@@ -29,4 +29,4 @@ install_app "waypaper" "auto"
 install_app "swww" "auto"
 
 # Tell the user we're done
-echo "hyprland Applications are Installed"
+show_install_end_splash "hyprland Applications are Installed"
